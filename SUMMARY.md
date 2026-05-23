@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🌈 Welcome to Pintos](README.md)
+* [Welcome to Pintos](README.md)
 
 ## Getting Started
 

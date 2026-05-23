@@ -22,14 +22,14 @@ First, like nachos, pinto beans are common Mexican food. Second, Pintos is small
 
 **There are five labs in total.** Lab0 is designed to prepare you for the later projects and practice your GDB ability, so it is intentionally much simpler than the remaining projects. In Lab1 - 4, you will extend Pintos in different dimensions and make it more robust and powerful.
 
-| Project                       | | Content                                |
-| ----------------------------- | | -------------------------------------- |
-| **Lab0: Getting Real**        | | Bootstrap Pintos                       |
-| **Lab1: Threads**             | | Kernel threads scheduling              |
-| **Lab2: User Programs**       | | Load & Run user programs, System calls |
-| **Lab3a: Virtual Memory**     | | Demand Paging                          |
-| **Lab3b: Mmap Files**         | | Mmap Files                             |
-| (optional) Lab4: File Systems | | Implement File systems                 |
+| Project                       | Content                                |
+| ----------------------------- | -------------------------------------- |
+| **Lab0: Getting Real**        | Bootstrap Pintos                       |
+| **Lab1: Threads**             | Kernel threads scheduling              |
+| **Lab2: User Programs**       | Load & Run user programs, System calls |
+| **Lab3a: Virtual Memory**     | Demand Paging                          |
+| **Lab3b: Mmap Files**         | Mmap Files                             |
+| (optional) Lab4: File Systems | Implement File systems                 |
 
 **In each lab, we will release all the test cases to support your local development.** After the deadline, we will run the same test suite to grade your submissions, so don't worry that your evil teaching assistants (TAs) will intentionally design many corner cases only to deduct your scores.
 
