@@ -114,7 +114,32 @@ podman run -it --rm --name pintos -v "${PWD}\pintos:/home/PKUOS/pintos" docker.i
 
 コンテナ内の `/home/PKUOS/pintos` は、手元の PC 上の `pintos` ディレクトリと共有されています。手元の PC でファイルを編集すると、コンテナ内からも同じ変更が見えます。
 
-## 5. Pintos をビルドして起動する
+## 5. 同じコンテナで別のシェルを開く
+
+Pintos のデバッグ中など、同じコンテナ内で2つ目のシェルを開きたいことがあります。例えば、一方のシェルで Pintos を起動し、もう一方のシェルで `gdb` を実行したい場合です。
+
+まず、手元の PC の別のターミナルまたは PowerShell を開き、起動中のコンテナを確認します。
+
+```
+podman ps
+```
+
+次のように、`pintos` という名前のコンテナが表示されます。
+
+```text
+CONTAINER ID  IMAGE                                COMMAND  CREATED        STATUS        PORTS  NAMES
+123456789abc  docker.io/rui314/pintos:2026-course  bash     2 minutes ago  Up 2 minutes         pintos
+```
+
+このコンテナに対して、次のコマンドを実行すると、同じコンテナ内で新しいシェルを開けます。
+
+```
+podman exec -it pintos bash
+```
+
+これで、最初に開いたシェルと同じコンテナの中に、2つ目のシェルが開きます。どちらのシェルからも `/home/PKUOS/pintos` に同じファイルが見えます。
+
+## 6. Pintos をビルドして起動する
 
 コンテナ内で、次のコマンドを順に実行してください。
 
@@ -137,7 +162,7 @@ Boot complete.
 
 Pintos や QEMU を終了するには、`Ctrl+a` を押してから `x` を押してください。うまくいかない場合は `Ctrl+c` でも終了できます。
 
-## 6. コンテナを終了する
+## 7. コンテナを終了する
 
 コンテナ内の作業を終えるには、次のコマンドを実行してください。
 
@@ -158,13 +183,3 @@ Now Let's conclude what you have done.
 Wow, _**virtualization is amazing**_, right?
 
 Throughout this semester, **you can modify your Pintos source code in your host machine with your favorite IDE but compile/run/debug/test your Pintos in the container thanks to the mounting technique**. You can leave the container running when you are modifying Pintos source code in you host computer, because your modification will be visible in the container immediately.
-
-## Option B: Virtual Machine
-
-{% hint style="warning" %}
-This method is not fully tested by your TAs, so we may not provide much help if you encounter some strange errors.
-{% endhint %}
-
-If you would like to use a VM for development, there is a [VirtualBox](https://www.virtualbox.org) VM provided by Johns Hopkins Univerisity that runs Ubuntu 18.04 with the necessary toolchain installed. You can download the image [here](https://bit.ly/3j9Elp4). The image is large (2.5 GB), so the download can take a while. The md5sum for the VM image is `69c89938d4b768bdcca4362fd39f06e4`. The initial login password is `jhucs318`.
-
-When you enter the VM successfully, you can follow the instruction [here](environment-setup.md#boot-pintos) to boot Pintos. You should ignore all the instructions related to Docker.
