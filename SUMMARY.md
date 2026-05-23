@@ -11,7 +11,6 @@
 * [Debug and Test](getting-started/debug-and-test/README.md)
   * [Testing](getting-started/debug-and-test/testing.md)
   * [Debugging](getting-started/debug-and-test/debugging.md)
-* [Grading](getting-started/grading.md)
 
 ## Project Description
 
