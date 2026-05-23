@@ -1,11 +1,5 @@
 # Lab0: Getting Real
 
-{% hint style="warning" %}
-<mark style="color:red;">**Code Due: Thursday 03/12 11:59 pm**</mark>
-
-<mark style="color:red;">**Design Doc Due: Sunday 03/15 11:59 pm**</mark>
-{% endhint %}
-
 **This assignment is set to prepare you for the later Pintos projects.** It will walk you through **what happens after a PC is powered on till when an operating system is up and running**, which you may have wondered about before.
 
 * You will set up the development environment, learn the Pintos workflow, and run/debug it in QEMU and Bochs.
@@ -26,8 +20,4 @@ Before you read the description of this project, read the [Loading](../../append
 
 {% content-ref url="faq.md" %}
 [faq.md](faq.md)
-{% endcontent-ref %}
-
-{% content-ref url="submission.md" %}
-[submission.md](submission.md)
 {% endcontent-ref %}

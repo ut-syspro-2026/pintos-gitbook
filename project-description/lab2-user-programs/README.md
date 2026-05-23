@@ -1,11 +1,5 @@
 # Lab2: User Programs
 
-{% hint style="warning" %}
-<mark style="color:red;">**Code Due: Thursday 04/23 11:59 pm**</mark>
-
-<mark style="color:red;">**Design Doc Due: Sunday 04/26 11:59 pm**</mark>
-{% endhint %}
-
 Now that you've worked with Pintos and are becoming familiar with its infrastructure and thread package, **it's time to start working on the parts of the system that allow running user programs.**
 
 * **The base code already supports loading and running user programs, but no I/O or interactivity is possible.** In this project, you will enable programs to interact with the OS via system calls.
@@ -33,8 +27,4 @@ You might find it useful to go back and reread how to run the tests (see section
 
 {% content-ref url="faq.md" %}
 [faq.md](faq.md)
-{% endcontent-ref %}
-
-{% content-ref url="submission.md" %}
-[submission.md](submission.md)
 {% endcontent-ref %}

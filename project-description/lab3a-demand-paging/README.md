@@ -1,11 +1,5 @@
 # Lab3a: Demand Paging
 
-{% hint style="warning" %}
-<mark style="color:red;">**Code Due: Thursday 05/28 11:59 pm**</mark>
-
-<mark style="color:red;">**Design Doc Due: Sunday 05/31 11:59 pm**</mark>
-{% endhint %}
-
 **By now you should have some familiarity with the inner workings of Pintos.**
 
 * Your OS can properly handle multiple threads of execution with proper synchronization, and can load multiple user programs at once.
@@ -33,8 +27,4 @@
 
 {% content-ref url="faq.md" %}
 [faq.md](faq.md)
-{% endcontent-ref %}
-
-{% content-ref url="submission.md" %}
-[submission.md](submission.md)
 {% endcontent-ref %}

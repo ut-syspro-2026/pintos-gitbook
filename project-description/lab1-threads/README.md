@@ -1,11 +1,5 @@
 # Lab1: Threads
 
-{% hint style="warning" %}
-<mark style="color:red;">**Code Due: Thursday 04/02 11:59 pm**</mark>
-
-<mark style="color:red;">**Design Doc Due: Sunday 04/05 11:59 pm**</mark>
-{% endhint %}
-
 **In this assignment, we give you a minimally functional thread system.** Your job is to **extend the functionality of this system to gain a better understanding of synchronization problems.**
 
 * You will be working primarily in the `threads/` directory for this assignment, with some work in the `devices/` directory on the side.
@@ -29,8 +23,4 @@ Before you read the description of this project, you should read all the section
 
 {% content-ref url="faq.md" %}
 [faq.md](faq.md)
-{% endcontent-ref %}
-
-{% content-ref url="submission.md" %}
-[submission.md](submission.md)
 {% endcontent-ref %}
