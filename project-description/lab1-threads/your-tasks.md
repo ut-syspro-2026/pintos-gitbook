@@ -146,7 +146,7 @@ You need not provide any interface to allow a thread to directly modify other th
 
 ## Task3: Advanced Scheduler
 
-### Exercise 3.1
+### Exercise 3.1 (Optional)
 
 {% hint style="success" %}
 <mark style="color:green;">**Exercise 3.1**</mark>
